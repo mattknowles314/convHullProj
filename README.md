@@ -1,3 +1,3 @@
 ## ConvHullProj
 
-Repository for work doneon my summer 2021 placement
+Repository for work done on my summer 2021 placement
