@@ -13,7 +13,7 @@ grads = []
 
 
 #Load in functions as points
-for i in open("sample_data2.csv","r").readlines():
+for i in open("sample_data.csv","r").readlines():
 	pointsX.append(int(i.split(",")[0]))
 	pointsY.append(int(i.split(",")[1]))
 
@@ -38,7 +38,8 @@ for i in range(1, len(pointsX)-1):
 hullX.append(pointsX[len(pointsX)-1])
 hullY.append(pointsY[len(pointsY)-1])
 
-plt.plot(pointsX,pointsY, 'b', label="f(x)")
-plt.plot(hullX, hullY, '--r', label="CHull(f(x))")
-plt.legend(loc="upper left")
-plt.show()
+def plot_hull(pointsX, pointsY, hullX, hullY):
+	plt.plot(pointsX,pointsY, 'b', label="f(x)")
+	plt.plot(hullX, hullY, '--r', label="CHull(f(x))")
+	plt.legend(loc="upper left")
+	plt.show()
