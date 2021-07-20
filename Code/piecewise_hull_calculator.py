@@ -43,3 +43,5 @@ def plot_hull(pointsX, pointsY, hullX, hullY):
 	plt.plot(hullX, hullY, '--r', label="CHull(f(x))")
 	plt.legend(loc="upper left")
 	plt.show()
+
+plot_hull(pointsX,pointsY,hullX,hullY)
