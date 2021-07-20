@@ -1,0 +1,2 @@
+IDEA: Start at the ask price, calculate gradients working backwards.
+Mark the defective points, and then remove them once we have been through.
