@@ -3,8 +3,6 @@ This code does some analysis on how quickly the piecewise calculator works.
 In the future, I want to generalise this for use on all algorithms that we write.
 '''
 
-
-
 import time
 import os
 import matplotlib.pyplot as plt
@@ -25,10 +23,14 @@ def plot_times(avg_time):
 	plt.ylabel('Time (s)')
 	plt.show()
 
-for i in range(0,50):
+for i in range(0,100):
 	test_time()
 
 avg_time = st.mean(times)
 sd_time = st.stdev(times)
 plot_times(avg_time)
+#print(times)
 
+with open("../Data/piecewise.txt", "w") as file:
+	for time in times:
+		file.write("%f\n" % time)
