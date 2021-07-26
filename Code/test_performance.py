@@ -12,7 +12,7 @@ times = []
 
 def test_time():
 	t0 = time.time()
-	os.system("python3 piecewise_hull_calculator.py")
+	os.system("python3 mono_chain.py")
 	t1 = time.time()
 	times.append(t1-t0)
 
@@ -28,9 +28,12 @@ for i in range(0,100):
 
 avg_time = st.mean(times)
 sd_time = st.stdev(times)
+print(avg_time, sd_time)
 plot_times(avg_time)
 #print(times)
 
+'''
 with open("../Data/piecewise.txt", "w") as file:
 	for time in times:
 		file.write("%f\n" % time)
+'''

@@ -6,6 +6,7 @@ than coming out.
 
 import matplotlib.pyplot as plt
 import math
+import cProfile
 
 #Create arrays to store the functions
 pointsX = []
@@ -14,7 +15,7 @@ grads = []
 hullGrads = []
 
 #Load in functions as points
-for i in open("sample_data.csv","r").readlines():
+for i in open("sample_data2.csv","r").readlines():
 	pointsX.append(int(i.split(",")[0]))
 	pointsY.append(int(i.split(",")[1]))
 
@@ -61,4 +62,4 @@ while q <= t:
 		q+=1
 
 
-#plot_hull(pointsX,pointsY,hullX,hullY)
+plot_hull(pointsX,pointsY,hullX,hullY)
