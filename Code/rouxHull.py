@@ -16,3 +16,4 @@ def roux_conv_hull(S):
 		m = grads.index(min(grads))
 		hull.append(S[curr_point+1+m])
 		curr_point = curr_point+1+m
+	return hull
