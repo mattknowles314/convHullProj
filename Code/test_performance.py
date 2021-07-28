@@ -1,5 +1,5 @@
 '''
-This code does some analysis on how quickly the piecewise calculator works.
+This code does some analysis on how quickly different functions work.
 In the future, I want to generalise this for use on all algorithms that we write.
 '''
 
