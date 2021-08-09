@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.30)  26 JUL 2021 09:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.30)  30 JUL 2021 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**week1.tex
-(./week1.tex
+**week2.tex
+(./week2.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/beamer.cls
@@ -742,8 +742,8 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@lastruleclass=\count156
 \@thisrulewidth=\dimen256
 )
-(./week1.aux)
-\openout1 = `week1.aux'.
+(./week2.aux)
+\openout1 = `week2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
@@ -838,9 +838,9 @@ LaTeX Info: Redefining \ref on input line 22.
 LaTeX Info: Redefining \pageref on input line 22.
 LaTeX Info: Redefining \nameref on input line 22.
 
-(./week1.out) (./week1.out)
+(./week2.out) (./week2.out)
 \@outlinefile=\write5
-\openout5 = `week1.out'.
+\openout5 = `week2.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 22.
@@ -920,7 +920,7 @@ r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Info: Redefining \includegraphics on input line 22.
- (./week1.nav)
+ (./week2.nav)
 LaTeX Font Info:    Try loading font information for U+msa on input line 22.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -955,94 +955,97 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ] [6
 
-] <../Figures/Figure_2.png, id=187, 462.528pt x 346.896pt>
-File: ../Figures/Figure_2.png Graphic file (type png)
+] [7
 
-<use ../Figures/Figure_2.png>
-Package pdftex.def Info: ../Figures/Figure_2.png used on input line 56.
-(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
- [7
+] [8
 
- <../Figures/Figure_2.png>]
-<../Figures/Figure_1.png, id=217, 462.528pt x 346.896pt>
-File: ../Figures/Figure_1.png Graphic file (type png)
+]
+<../Figures/Figure_10.png, id=241, 462.528pt x 346.896pt>
+File: ../Figures/Figure_10.png Graphic file (type png)
 
-<use ../Figures/Figure_1.png>
-Package pdftex.def Info: ../Figures/Figure_1.png used on input line 64.
-(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
- [8
-
- <../Figures/Figure_1.png>]
-<../Figures/Figure_4.png, id=246, 462.528pt x 346.896pt>
-File: ../Figures/Figure_4.png Graphic file (type png)
-
-<use ../Figures/Figure_4.png>
-Package pdftex.def Info: ../Figures/Figure_4.png used on input line 72.
+<use ../Figures/Figure_10.png>
+Package pdftex.def Info: ../Figures/Figure_10.png used on input line 60.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
  [9
 
- <../Figures/Figure_4.png>]
-<../Figures/Figure_3.png, id=274, 462.528pt x 346.896pt>
-File: ../Figures/Figure_3.png Graphic file (type png)
+ <../Figures/Figure_10.png>]
+<../Figures/Figure_11.png, id=270, 462.528pt x 346.896pt>
+File: ../Figures/Figure_11.png Graphic file (type png)
 
-<use ../Figures/Figure_3.png>
-Package pdftex.def Info: ../Figures/Figure_3.png used on input line 80.
+<use ../Figures/Figure_11.png>
+Package pdftex.def Info: ../Figures/Figure_11.png used on input line 68.
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
  [10
 
- <../Figures/Figure_3.png>] [11
+ <../Figures/Figure_11.png>] [11
 
 ] [12
 
-] [13
-
 ]
-[14
+[13
 
-] [15
+] <../Figures/rouxVSmono.png, id=380, 462.528pt x 346.896pt>
+File: ../Figures/rouxVSmono.png Graphic file (type png)
+
+<use ../Figures/rouxVSmono.png>
+Package pdftex.def Info: ../Figures/rouxVSmono.png used on input line 87.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+ [14
+
+ <../Figures/rouxVSmono.png>] [15
 
 ] [16
 
-] [17
+]
+[17
 
-] <../Figures/Figure_5.png, id=489, 462.528pt x 346.896pt>
-File: ../Figures/Figure_5.png Graphic file (type png)
+] <../Figures/full_comparison.png, id=487, 462.528pt x 346.896pt>
+File: ../Figures/full_comparison.png Graphic file (type png)
 
-<use ../Figures/Figure_5.png>
-Package pdftex.def Info: ../Figures/Figure_5.png used on input line 111.
+<use ../Figures/full_comparison.png>
+Package pdftex.def Info: ../Figures/full_comparison.png used on input line 106.
+
 (pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
  [18
 
- <../Figures/Figure_5.png>] [19
+ <../Figures/full_comparison.png>]
+[19
+
+] [20
+
+] [21
+
+] [22
 
 ]
 \tf@nav=\write6
-\openout6 = `week1.nav'.
+\openout6 = `week2.nav'.
 
 \tf@toc=\write7
-\openout7 = `week1.toc'.
+\openout7 = `week2.toc'.
 
 \tf@snm=\write8
-\openout8 = `week1.snm'.
+\openout8 = `week2.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
- (./week1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
-Package rerunfilecheck Info: File `week1.out' has not changed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
+ (./week2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
+Package rerunfilecheck Info: File `week2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
  ) 
 Here is how much of TeX's memory you used:
  16858 strings out of 493014
- 325969 string characters out of 6133351
- 392429 words of memory out of 5000000
- 19954 multiletter control sequences out of 15000+600000
+ 325941 string characters out of 6133351
+ 393431 words of memory out of 5000000
+ 19949 multiletter control sequences out of 15000+600000
  12087 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,18n,55p,385b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1053,10 +1056,10 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on week1.pdf (19 pages, 230819 bytes).
+Output written on week2.pdf (22 pages, 316464 bytes).
 PDF statistics:
- 580 PDF objects out of 1000 (max. 8388607)
- 525 compressed objects within 6 object streams
- 39 named destinations out of 1000 (max. 500000)
- 92 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 658 PDF objects out of 1000 (max. 8388607)
+ 601 compressed objects within 7 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
