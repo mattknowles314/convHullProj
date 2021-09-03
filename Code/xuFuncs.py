@@ -2,6 +2,7 @@ import random
 import numpy as np
 import math
 import matplotlib.pyplot as plt
+from sympy import Interval
 
 
 alpha1 = random.uniform(0.0, 10.0)
@@ -80,3 +81,6 @@ def Gamma(gamma, I):
 		return min(I)
 	elif gamma > max(I):
 		return max(I)
+
+def hbar(g):
+	return 0
