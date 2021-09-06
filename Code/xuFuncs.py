@@ -10,13 +10,16 @@ alpha2 = random.uniform(0.0, 10.0)
 beta1 = random.uniform(0.0, 10.0)
 beta2 = random.uniform(0.0, 10.0)
 
-def g1(y,p1):
+p1 = 0.2
+p2 = 1-p1
+
+def g1(y):
 	if y >= 0:
 		return y*math.log(y/p1)
 	else:
 		return float('inf')
 
-def g2(y,p2):
+def g2(y):
 	if y >= 0:
 		return y*math.log(y/p2)
 	else:
