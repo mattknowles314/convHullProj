@@ -3,14 +3,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.path import Path
 from matplotlib.patches import PathPatch
+import random
+from numpy.core.function_base import linspace
 
 s0 = 100
 u = math.exp(0.2*math.sqrt(1/52)) #sigma=0.2
 n=4
 k = 0.005
-p1=0.3
+p1=0.5
 p2=1-p1
-#Can use np.argmin for Theorem 4.27
+z = random.uniform(0,100)
+alpha1 = 1
+alpha2 = 1
+
 
 def g1(y):
 	if y >= 0:
@@ -29,6 +34,14 @@ def node_domain(layer, node):
     bid = (1-k)*p
     ask = (1+k)*p
     return bid, ask
+
+def Gamma(y, I):
+    if y in I:
+        return y
+    elif y < min(I):
+        return min(I)
+    elif y > max(I):
+        return max(I)
 
 def qmin(x,a1,a2,b1,b2):
     if x >= b1 and x <= b2:
@@ -63,8 +76,22 @@ def minhTilder(x,a1,a2,b1,b2,z,alpha1,alpha2,beta1,beta2):
         H.append(htilder(x,z,gamma,alpha1,alpha2,beta1,beta2))
     return min(H)
 
+def fmin(x, alpha1,alpha2,beta1,beta2,a1,a2,b1,b2,z):
+    f1 = (alpha1*x)+beta1 + g1(1)
+    f2 = (alpha2*x)+beta2 + g2(1)
+    f3 = minhTilder(x,a1,a2,b1,b2,z,alpha1,alpha2,beta1,beta2) 
+    return min(f1,f2,f3)
+
 #4.44
 
+'''
+layer = n-1
+while layer >= 1:
+    print("T = ",layer)
+    for node in range(0,layer+1):
+        print("NODE = ",node, "| BID = ",node_domain(layer,node)[0], "| ASK = ",node_domain(layer,node)[1])
+    layer-=1
+'''
 
 j3s = []
 for i in range(n+1):
@@ -82,11 +109,38 @@ for x in interval:
         else:
             continue
 
+#How do we tie this all together then??
+
 '''
-layer = n-1
-while layer >= 1:
-    print("T = ",layer)
-    for node in range(0,layer+1): #layer+2 because of the way range() works
+#METHOD FOR THE UPPER 2ND LAYER NODE!!
+b1 = node_domain(3,0)[0]
+a1 = node_domain(3,0)[1]
+b2 = node_domain(3,1)[0]
+a2 = node_domain(3,1)[1]
+
+f2 = []
+for x in linspace(node_domain(2,0)[0],node_domain(2,0)[1]):
+    f2.append(fmin(x,alpha1,alpha2,beta1,beta2,a1,a2,b1,b2,z))
+
+plt.plot(linspace(node_domain(2,0)[0],node_domain(2,0)[1]),f2)
+plt.xlabel("Bid-Ask Interval")
+plt.ylabel("f(x)")
+plt.show()
+'''
+
+#METHOD FOR ALL OF LAYER 2
+layer2Vals = [[] for x in range(0,3)]
+
+layer =2
+for node in range(0,layer+1):
         print("NODE = ",node, "| BID = ",node_domain(layer,node)[0], "| ASK = ",node_domain(layer,node)[1])
-    layer-=1
-'''
+        for x in linspace(node_domain(layer,node)[0],node_domain(layer,node)[1]):
+            beta1 = 100-j3s[node][0]
+            beta2 = 100-j3s[node][1]
+            layer2Vals[node].append(fmin(x,alpha1,alpha2,beta1,beta2,node_domain(layer+1,node)[0],node_domain(layer+1,node+1)[0],node_domain(layer+1,node)[1],node_domain(layer+1,node+1)[1],z))
+        plt.plot(linspace(node_domain(layer,node)[0],node_domain(layer,node)[1]),layer2Vals[node],label=("Node"+str(node)))
+plt.title("f(x) calculated for each node in layer 2")
+plt.legend(loc="upper left")
+plt.xlabel('Bid-Ask Intervals')
+plt.ylabel('f(x)')
+plt.show()
